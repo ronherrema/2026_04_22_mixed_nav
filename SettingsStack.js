@@ -14,7 +14,7 @@ export default function SettingsStackScreen() {
       }}
     >
       <Stack.Screen name="Settings" component={SettingsScreen} />
-      <Stack.Screen name="Theme" component={ThemesScreen} />
+      <Stack.Screen name="Themes" component={ThemesScreen} />
       <Stack.Screen name="Profile" component={ProfileScreen} />
     </Stack.Navigator>
   )

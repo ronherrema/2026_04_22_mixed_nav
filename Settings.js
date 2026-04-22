@@ -5,8 +5,8 @@ export default function SettingsScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <Button
-        title="Theme"
-        onPress={() => navigation.navigate("Theme")}
+        title="Themes"
+        onPress={() => navigation.navigate("Themes")}
       ></Button>
       <Button
         title="Profile"
