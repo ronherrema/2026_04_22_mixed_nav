@@ -13,29 +13,43 @@ export default function App() {
     <SafeAreaProvider>
       <NavigationContainer>
         <Tab.Navigator
-          screenOptions={({ route }) => ({
-            tabBarIcon: ({ color, size }) => {
-              let iconName
-              if (route.name === "Home") {
-                iconName = "home-outline"
-              } else if (route.name === "Herbs") {
-                iconName = "leaf-outline"
-              } else if (route.name === "Settings")
-                iconName = "settings-outline"
-              return <Ionicons name={iconName} size={size} color={color} />
-            },
+          screenOptions={() => ({
             tabBarActiveTintColor: "#343434",
-            tabBarInactiveTintColor: "#ababab",
+            tabBarInactiveTintColor: "#bcbcbc",
             tabBarStyle: {
-              backgroundColor: "#efefef",
+              backgroundColor: "#f7f7f7",
             },
             headerShown: false,
             // tabBarShowLabel: false,
           })}
         >
-          <Tab.Screen name="Home" component={HomeScreen} />
-          <Tab.Screen name="Herbs" component={HerbsScreen} />
-          <Tab.Screen name="Settings" component={SettingsStackScreen} />
+          <Tab.Screen
+            name="Home"
+            component={HomeScreen}
+            options={{
+              tabBarIcon: ({ color, size }) => (
+                <Ionicons name="home-outline" size={size} color={color} />
+              ),
+            }}
+          />
+          <Tab.Screen
+            name="Herbs"
+            component={HerbsScreen}
+            options={{
+              tabBarIcon: ({ color, size }) => (
+                <Ionicons name="leaf-outline" size={size} color={color} />
+              ),
+            }}
+          />
+          <Tab.Screen
+            name="Settings"
+            component={SettingsStackScreen}
+            options={{
+              tabBarIcon: ({ color, size }) => (
+                <Ionicons name="settings-outline" size={size} color={color} />
+              ),
+            }}
+          />
         </Tab.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
