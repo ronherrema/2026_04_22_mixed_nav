@@ -1,9 +1,12 @@
 import { SafeAreaView } from "react-native-safe-area-context"
 import { Button, StyleSheet } from "react-native"
+import { useStore } from "./Store"
 
 export default function SettingsScreen({ navigation }) {
+  const { bgc } = useStore()
+
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={[styles.container, { backgroundColor: bgc }]}>
       <Button
         title="Themes"
         onPress={() => navigation.navigate("Themes")}
