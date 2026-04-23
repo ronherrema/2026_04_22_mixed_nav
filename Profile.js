@@ -9,7 +9,6 @@ export default function ProfileScreen() {
   const getData = async () => {
     try {
       const data = await AsyncStorage.getItem("bgc")
-
       if (data !== null) {
         setBgc(data)
       }
