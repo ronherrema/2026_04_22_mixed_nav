@@ -42,7 +42,7 @@ export default function App() {
             }}
           />
           <Tab.Screen
-            name="Settings"
+            name="SettingsStack"
             component={SettingsStackScreen}
             options={{
               tabBarIcon: ({ color, size }) => (
