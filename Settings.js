@@ -6,7 +6,7 @@ export default function SettingsScreen({ navigation }) {
   const [bgc, setBgc] = useReState("bgc")
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={[styles.container, { backgroundColor: bgc }]}>
       <Button
         title="Themes"
         onPress={() => navigation.navigate("Themes")}
@@ -24,6 +24,5 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "white",
   },
 })

@@ -6,7 +6,7 @@ export default function ProfileScreen() {
   const [bgc, setBgc] = useReState("bgc")
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={[styles.container, { backgroundColor: bgc }]}>
       <Text style={{ fontSize: 36 }}>Profile</Text>
     </SafeAreaView>
   )
@@ -17,6 +17,5 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "white",
   },
 })

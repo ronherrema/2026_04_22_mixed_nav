@@ -3,7 +3,7 @@ import { StyleSheet, Text } from "react-native"
 import { useReState } from "@raulpesilva/re-state"
 
 export default function HomeScreen() {
-  const [bgc, setBgc] = useReState("bgc", "red")
+  const [bgc, setBgc] = useReState("bgc", "white")
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: bgc }]}>
@@ -17,6 +17,5 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    // backgroundColor: "white",
   },
 })
