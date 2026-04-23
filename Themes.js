@@ -7,7 +7,7 @@ export default function ThemesScreen() {
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: bgc }]}>
-      <Text style={{ fontSize: 36 }}>Themes</Text>
+      <Text style={styles.header}>Themes</Text>
       <Button title="Red" onPress={() => setBgc("#ff777777")}></Button>
       <Button title="Green" onPress={() => setBgc("#77ff7777")}></Button>
       <Button title="White" onPress={() => setBgc("#fff")}></Button>
@@ -20,5 +20,9 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "space-evenly",
+  },
+  header: {
+    fontSize: 36,
+    color: "blue",
   },
 })

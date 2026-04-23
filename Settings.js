@@ -25,4 +25,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  header: {
+    fontSize: 36,
+    color: "blue",
+  },
 })
