@@ -1,7 +1,10 @@
 import { StyleSheet, Text } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
+import { useReState } from "@raulpesilva/re-state"
 
 export default function HerbsScreen() {
+  const [bgc, setBgc] = useReState("bgc")
+
   return (
     <SafeAreaView style={styles.container}>
       <Text style={{ fontSize: 36 }}>Herbs</Text>
