@@ -2,6 +2,10 @@ import { SafeAreaView } from "react-native-safe-area-context"
 import { Button, StyleSheet } from "react-native"
 
 export default function SettingsScreen({ navigation }) {
+  useEffect(() => {
+    getData()
+  }, [])
+
   return (
     <SafeAreaView style={styles.container}>
       <Button
