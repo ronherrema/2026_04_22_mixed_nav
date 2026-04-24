@@ -3,6 +3,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import HomeScreen from "./Home"
 import HerbsScreen from "./Herbs"
+import FavouritesScreen from "./Favourites"
 import SettingsStackScreen from "./SettingsStack"
 import { Ionicons } from "@expo/vector-icons"
 
@@ -38,6 +39,15 @@ export default function App() {
             options={{
               tabBarIcon: ({ color, size }) => (
                 <Ionicons name="leaf-outline" size={size} color={color} />
+              ),
+            }}
+          />
+          <Tab.Screen
+            name="Favourites"
+            component={FavouritesScreen}
+            options={{
+              tabBarIcon: ({ color, size }) => (
+                <Ionicons name="heart-outline" size={size} color={color} />
               ),
             }}
           />

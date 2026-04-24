@@ -1,5 +1,6 @@
-import { StyleSheet, Text } from "react-native"
+import { FlatList, StyleSheet, Text } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
+import herbs from "./HerbsList"
 import { useStore } from "./Store"
 
 export default function HerbsScreen() {
@@ -8,6 +9,17 @@ export default function HerbsScreen() {
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: bgc }]}>
       <Text style={{ fontSize: 36 }}>Herbs</Text>
+      <FlatList
+        style={{ width: "80%" }}
+        data={herbs}
+        renderItem={({ item }) => (
+          <>
+            <Text>Name: {item.name}</Text>
+            <Text>Scientific name: {item.scientificName}</Text>
+            <Text>Benefits: {item.benefits}</Text>
+          </>
+        )}
+      ></FlatList>
     </SafeAreaView>
   )
 }
