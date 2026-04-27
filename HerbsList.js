@@ -1,5 +1,6 @@
 const herbs = [
   {
+    id: Math.random() * 10000,
     name: "Chamomile",
     scientificName: "Matricaria chamomilla",
     benefits:
@@ -7,6 +8,7 @@ const herbs = [
     image: require("./assets/images/chamomile.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Peppermint",
     scientificName: "Mentha × piperita",
     benefits:
@@ -14,6 +16,7 @@ const herbs = [
     image: require("./assets/images/peppermint.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Ginger",
     scientificName: "Zingiber officinale",
     benefits:
@@ -21,6 +24,7 @@ const herbs = [
     image: require("./assets/images/ginger.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Turmeric",
     scientificName: "Curcuma longa",
     benefits:
@@ -28,6 +32,7 @@ const herbs = [
     image: require("./assets/images/turmeric.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Lavender",
     scientificName: "Lavandula angustifolia",
     benefits:
@@ -35,12 +40,14 @@ const herbs = [
     image: require("./assets/images/lavender.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Echinacea",
     scientificName: "Echinacea purpurea",
     benefits: "Supports immune system and may reduce duration of colds.",
     image: require("./assets/images/echinacea.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Garlic",
     scientificName: "Allium sativum",
     benefits:
@@ -48,12 +55,14 @@ const herbs = [
     image: require("./assets/images/garlic.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Aloe Vera",
     scientificName: "Aloe barbadensis miller",
     benefits: "Soothes burns, supports skin healing and mild digestive health.",
     image: require("./assets/images/chamomile.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Rosemary",
     scientificName: "Salvia rosmarinus",
     benefits:
@@ -61,6 +70,7 @@ const herbs = [
     image: require("./assets/images/chamomile.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Thyme",
     scientificName: "Thymus vulgaris",
     benefits:
@@ -68,12 +78,14 @@ const herbs = [
     image: require("./assets/images/chamomile.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Sage",
     scientificName: "Salvia officinalis",
     benefits: "May improve memory and soothe sore throats and inflammation.",
     image: require("./assets/images/chamomile.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Basil",
     scientificName: "Ocimum basilicum",
     benefits:
@@ -81,6 +93,7 @@ const herbs = [
     image: require("./assets/images/chamomile.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Holy Basil (Tulsi)",
     scientificName: "Ocimum tenuiflorum",
     benefits:
@@ -88,6 +101,7 @@ const herbs = [
     image: require("./assets/images/chamomile.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Dandelion",
     scientificName: "Taraxacum officinale",
     benefits:
@@ -95,12 +109,14 @@ const herbs = [
     image: require("./assets/images/chamomile.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Milk Thistle",
     scientificName: "Silybum marianum",
     benefits: "Protects and supports liver detoxification and regeneration.",
     image: require("./assets/images/chamomile.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Valerian",
     scientificName: "Valeriana officinalis",
     benefits:
@@ -108,6 +124,7 @@ const herbs = [
     image: require("./assets/images/valerian.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Lemon Balm",
     scientificName: "Melissa officinalis",
     benefits:
@@ -115,12 +132,14 @@ const herbs = [
     image: require("./assets/images/chamomile.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Fennel",
     scientificName: "Foeniculum vulgare",
     benefits: "Relieves bloating and supports digestive and hormonal balance.",
     image: require("./assets/images/chamomile.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Parsley",
     scientificName: "Petroselinum crispum",
     benefits:
@@ -128,6 +147,7 @@ const herbs = [
     image: require("./assets/images/chamomile.png"),
   },
   {
+    id: Math.random() * 10000,
     name: "Cilantro (Coriander)",
     scientificName: "Coriandrum sativum",
     benefits: "Supports digestion and may help detoxify heavy metals.",

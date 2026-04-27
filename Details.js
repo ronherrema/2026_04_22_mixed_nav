@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View } from "react-native"
+import { Button, StyleSheet, Text, View } from "react-native"
 import { useStore } from "./Store"
 
 export default function DetailsScreen({ route }) {
-  const { bgc } = useStore()
+  const { bgc, selectedItems, addSelectedItem } = useStore()
   const { item } = route.params
 
   return (
@@ -10,6 +10,7 @@ export default function DetailsScreen({ route }) {
       <Text style={styles.text}>Name: {item.name}</Text>
       <Text style={styles.text}>Scientific Name: {item.scientificName}</Text>
       <Text style={styles.text}>Benefits: {item.benefits}</Text>
+      <Button title="Fave" onPress={() => addSelectedItem(item)}></Button>
     </View>
   )
 }

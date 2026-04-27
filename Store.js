@@ -12,6 +12,10 @@ export const useStore = create(
     (set) => ({
       bgc: "white",
       setBgc: (color) => set({ bgc: color }),
+
+      selectedItems: [],
+      addSelectedItem: (item) =>
+        set((state) => ({ selectedItems: [...state.selectedItems, item] })),
     }),
     {
       name: "storage",
