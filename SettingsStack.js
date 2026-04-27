@@ -13,7 +13,7 @@ export default function SettingsStackScreen() {
     <Stack.Navigator
       screenOptions={{
         headerTitle: "",
-        // headerShadowVisible: false,
+        headerShadowVisible: false,
         headerStyle: {
           backgroundColor: bgc,
         },

@@ -12,7 +12,7 @@ export default function HerbsStackScreen() {
     <Stack.Navigator
       screenOptions={{
         headerTitle: "",
-        // headerShadowVisible: false,
+        headerShadowVisible: false,
         headerStyle: {
           backgroundColor: bgc,
         },

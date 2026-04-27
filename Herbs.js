@@ -29,7 +29,7 @@ export default function HerbsScreen({ navigation }) {
 
             <TouchableOpacity
               style={styles.more}
-              onPress={() => navigation.navigate("Details")}
+              onPress={() => navigation.navigate("Details", { item })}
             >
               <Text style={styles.learnText}>Learn more</Text>
               <Ionicons
