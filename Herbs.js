@@ -17,7 +17,7 @@ export default function HerbsScreen({ navigation }) {
     <View style={[styles.container, { backgroundColor: bgc }]}>
       <Text style={styles.header}>Herbs</Text>
       <FlatList
-        style={{ width: "80%", marginTop: 10 }}
+        style={styles.list}
         data={herbs}
         keyExtractor={(item) => item.name}
         renderItem={({ item }) => (
@@ -86,5 +86,12 @@ const styles = StyleSheet.create({
   },
   icon: {
     color: "#555",
+  },
+  list: {
+    width: "80%",
+    // height: "90%",
+    marginTop: 10,
+    borderRadius: 10,
+    flexGrow: 0,
   },
 })

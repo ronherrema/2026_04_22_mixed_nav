@@ -7,9 +7,9 @@ export default function DetailsScreen({ route }) {
 
   return (
     <View style={[styles.container, { backgroundColor: bgc }]}>
-      <Text>Name: {item.name}</Text>
-      <Text>Scientific Name: {item.scientificName}</Text>
-      <Text>Benefits: {item.benefits}</Text>
+      <Text style={styles.text}>Name: {item.name}</Text>
+      <Text style={styles.text}>Scientific Name: {item.scientificName}</Text>
+      <Text style={styles.text}>Benefits: {item.benefits}</Text>
     </View>
   )
 }
@@ -18,8 +18,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "flex-start",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     backgroundColor: "white",
     padding: 15,
+  },
+  text: {
+    fontSize: 18,
+    padding: 3,
   },
 })
