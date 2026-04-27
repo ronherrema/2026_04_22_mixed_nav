@@ -8,7 +8,7 @@ export default function HerbsScreen() {
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: bgc }]}>
-      <Text style={{ fontSize: 36 }}>Herbs</Text>
+      <Text style={{ fontSize: 36, color: "white" }}>Herbs</Text>
       <FlatList
         style={{ width: "80%" }}
         data={herbs}

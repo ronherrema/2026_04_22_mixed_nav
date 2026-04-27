@@ -7,7 +7,7 @@ export default function FavouritesScreen() {
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: bgc }]}>
-      <Text style={{ fontSize: 36 }}>Faves</Text>
+      <Text style={{ fontSize: 36, color: "white" }}>Faves</Text>
     </SafeAreaView>
   )
 }

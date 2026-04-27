@@ -7,7 +7,7 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: bgc }]}>
-      <Text style={{ fontSize: 36 }}>Home</Text>
+      <Text style={{ fontSize: 36, color: "#fff" }}>Home</Text>
     </SafeAreaView>
   )
 }
