@@ -34,7 +34,7 @@ export default function App() {
             }}
           />
           <Tab.Screen
-            name="HerbsStack"
+            name="Herbs"
             component={HerbsStackScreen}
             options={{
               tabBarIcon: ({ color, size }) => (
@@ -52,7 +52,7 @@ export default function App() {
             }}
           />
           <Tab.Screen
-            name="SettingsStack"
+            name="Settings"
             component={SettingsStackScreen}
             options={{
               tabBarIcon: ({ color, size }) => (

@@ -6,7 +6,6 @@ import {
   View,
   TouchableOpacity,
 } from "react-native"
-import { SafeAreaView } from "react-native-safe-area-context"
 import herbs from "./HerbsList"
 import { useStore } from "./Store"
 import Ionicons from "@expo/vector-icons/Ionicons"
@@ -15,7 +14,7 @@ export default function HerbsScreen({ navigation }) {
   const { bgc } = useStore()
 
   return (
-    <SafeAreaView style={[styles.container, { backgroundColor: bgc }]}>
+    <View style={[styles.container, { backgroundColor: bgc }]}>
       <Text style={styles.header}>Herbs</Text>
       <FlatList
         style={{ width: "80%", marginTop: 10 }}
@@ -30,7 +29,7 @@ export default function HerbsScreen({ navigation }) {
 
             <TouchableOpacity
               style={styles.more}
-              onPress={navigation.navigate("Details")}
+              onPress={() => navigation.navigate("Details")}
             >
               <Text style={styles.learnText}>Learn more</Text>
               <Ionicons
@@ -42,7 +41,7 @@ export default function HerbsScreen({ navigation }) {
           </View>
         )}
       />
-    </SafeAreaView>
+    </View>
   )
 }
 
@@ -50,7 +49,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     backgroundColor: "white",
   },
   image: {

@@ -1,14 +1,13 @@
-import { SafeAreaView } from "react-native-safe-area-context"
-import { Text, StyleSheet } from "react-native"
+import { Text, StyleSheet, View } from "react-native"
 import { useStore } from "./Store"
 
 export default function ProfileScreen() {
   const { bgc } = useStore()
 
   return (
-    <SafeAreaView style={[styles.container, { backgroundColor: bgc }]}>
+    <View style={[styles.container, { backgroundColor: bgc }]}>
       <Text style={{ fontSize: 36, color: "#fff" }}>Profile</Text>
-    </SafeAreaView>
+    </View>
   )
 }
 

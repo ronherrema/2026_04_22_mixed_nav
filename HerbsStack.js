@@ -12,10 +12,11 @@ export default function HerbsStackScreen() {
     <Stack.Navigator
       screenOptions={{
         headerTitle: "",
-        headerShadowVisible: false,
+        // headerShadowVisible: false,
         headerStyle: {
           backgroundColor: bgc,
         },
+        // headerShown: false,
       }}
     >
       <Stack.Screen name="Herbs" component={HerbsScreen} />

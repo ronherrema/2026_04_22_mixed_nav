@@ -13,11 +13,11 @@ export default function SettingsStackScreen() {
     <Stack.Navigator
       screenOptions={{
         headerTitle: "",
-        headerShadowVisible: false,
+        // headerShadowVisible: false,
         headerStyle: {
           backgroundColor: bgc,
         },
-        headerShown: false,
+        // headerShown: false,
       }}
     >
       <Stack.Screen name="Settings" component={SettingsScreen} />
