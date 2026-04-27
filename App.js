@@ -2,7 +2,7 @@ import { NavigationContainer } from "@react-navigation/native"
 import { SafeAreaProvider } from "react-native-safe-area-context"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import HomeScreen from "./Home"
-import HerbsScreen from "./Herbs"
+import HerbsStackScreen from "./HerbsStack"
 import FavouritesScreen from "./Favourites"
 import SettingsStackScreen from "./SettingsStack"
 import { Ionicons } from "@expo/vector-icons"
@@ -34,8 +34,8 @@ export default function App() {
             }}
           />
           <Tab.Screen
-            name="Herbs"
-            component={HerbsScreen}
+            name="HerbsStack"
+            component={HerbsStackScreen}
             options={{
               tabBarIcon: ({ color, size }) => (
                 <Ionicons name="leaf-outline" size={size} color={color} />
@@ -52,7 +52,7 @@ export default function App() {
             }}
           />
           <Tab.Screen
-            name="Settings"
+            name="SettingsStack"
             component={SettingsStackScreen}
             options={{
               tabBarIcon: ({ color, size }) => (

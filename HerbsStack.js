@@ -1,12 +1,11 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import ThemesScreen from "./Themes"
-import ProfileScreen from "./Profile"
-import SettingsScreen from "./Settings"
+import HerbsScreen from "./Herbs"
+import DetailsScreen from "./Details"
 import { useStore } from "./Store"
 
 const Stack = createNativeStackNavigator()
 
-export default function SettingsStackScreen() {
+export default function HerbsStackScreen() {
   const { bgc } = useStore()
 
   return (
@@ -17,12 +16,10 @@ export default function SettingsStackScreen() {
         headerStyle: {
           backgroundColor: bgc,
         },
-        headerShown: false,
       }}
     >
-      <Stack.Screen name="Settings" component={SettingsScreen} />
-      <Stack.Screen name="Themes" component={ThemesScreen} />
-      <Stack.Screen name="Profile" component={ProfileScreen} />
+      <Stack.Screen name="Herbs" component={HerbsScreen} />
+      <Stack.Screen name="Details" component={DetailsScreen} />
     </Stack.Navigator>
   )
 }

@@ -9,8 +9,9 @@ export default function ThemesScreen() {
     <SafeAreaView style={[styles.container, { backgroundColor: bgc }]}>
       <Text style={{ fontSize: 36, color: "#fFF" }}>Themes</Text>
       <Button title="Green" onPress={() => setBgc("#77ff77ff")}></Button>
-      <Button title="White" onPress={() => setBgc("#fff")}></Button>
       <Button title="Purple" onPress={() => setBgc("#7777ff77")}></Button>
+      <Button title="Salmon" onPress={() => setBgc("#ff777777")}></Button>
+      <Button title="White" onPress={() => setBgc("#fff")}></Button>
     </SafeAreaView>
   )
 }
